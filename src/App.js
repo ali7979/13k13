@@ -18,7 +18,7 @@ import Video from './Components/Video';
 
 function App() {
   return ( 
-  <BrowserRouter>
+  <BrowserRouter basename="/13k13">
     <div className="container">
     {/* <header>
       <Header/>
