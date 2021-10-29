@@ -1,10 +1,10 @@
 import './css/style.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import HomeScreen from './screens/HomeScreen';
+
 import Login from './Components/Login';
 import Header from './Components/Header'
-import UploadVideoScreen from './screens/UploadVideoScreen';
-import ProfileScreen from './screens/ProfileScreen';
+// import UploadVideoScreen from './screens/UploadVideoScreen';
+// import ProfileScreen from './screens/ProfileScreen';
 import Dashboard from './screens/Dashboard';
 import dshbrd from './screens/dshbrd';
 import hmepg from './screens/hmepg';
@@ -12,6 +12,9 @@ import Signup from './Components/Signup';
 import sigup from './screens/signup';
 import upldsc from './screens/upldsc';
 import signin from './screens/signin';
+import profile from './screens/profile';
+import VidsComponent from './Components/VidsComponent';
+import Video from './Components/Video';
 
 function App() {
   return ( 
@@ -26,13 +29,15 @@ function App() {
         <Route path="/login" exact component={Login} />
         <Route path="/hme" exact component={hmepg} />
         <Route path="/" exact component={upldsc}/>
-        <Route path="/u" exact component={UploadVideoScreen}/>
+        {/* <Route path="/u" exact component={UploadVideoScreen}/> */}
         <Route path="/dash" exact component={Dashboard}/>
         <Route path="/dsh" exact component={dshbrd}/>
         <Route path="/signup" exact component={sigup}/>
         <Route path="/signin" exact component={signin}/>
+        <Route path="/profile" exact component={profile}/>
+        <Route path="/vid" exact component={VidsComponent}/>
 
-        <Route path="/profile/:email" exact component={ProfileScreen}/>
+        {/* <Route path="/profile/:email" exact component={ProfileScreen}/> */}
     </Switch>
     </main>
    {/* <footer>
