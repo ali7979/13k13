@@ -1,9 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import sigup from "../css/sigup.css"
 import Full_transparent_fz from "../images/Full_transparent_fz.png"
 
-export default function signup() {
+export default function Signup() {
+
+
+
+
+const [dis, setdis] = useState("block")
+
+var fun2=()=>{
+	// 	var x = document.getElementById("myDIV");
+	//   if (x.style.display === "none") {
+	//     x.style.display = "block";
+	//   } else {
+	//     x.style.display = "none";
+	//   }
+	setdis("none")
+	console.log(dis)
+
+	}
+	var d=dis;
+
     return (
       
 
@@ -16,8 +35,8 @@ export default function signup() {
 
 
 
-
-	
+<div className="sign" style={{display:dis}} >
+	<div>{dis}</div>
 		<svg class="Rectangle_23">
 			<rect id="Rectangle_23" rx="20" ry="20" x="0" y="0" width="656" height="952">
 			</rect>
@@ -37,7 +56,7 @@ export default function signup() {
 		<div id="Dont_have_an_account_Sign_up">
 			<span>Don't have an account? </span><Link><span style={{textDecoration:"underline"}}>Sign up</span></Link>
 		</div>
-		<Link><svg class="ic_cancel_24px" viewBox="2 2 51.678 51.678">
+		<Link onClick={fun2}><svg class="ic_cancel_24px" viewBox="2 2 51.678 51.678">
 			<path id="ic_cancel_24px" d="M 27.83896446228027 2 C 13.55001544952393 2 2 13.55001544952393 2 27.83896446228027 C 2 42.12791442871094 13.55001544952393 53.67792892456055 27.83896446228027 53.67792892456055 C 42.12791442871094 53.67792892456055 53.67792892456055 42.12791442871094 53.67792892456055 27.83896446228027 C 53.67792892456055 13.55001449584961 42.12791442871094 2 27.83896446228027 2 Z M 40.75844573974609 37.11515426635742 L 37.11515426635742 40.75844573974609 L 27.83896446228027 31.48225784301758 L 18.56277656555176 40.75844573974609 L 14.91948127746582 37.11515426635742 L 24.19567108154297 27.83896446228027 L 14.91948127746582 18.56277656555176 L 18.56277656555176 14.91948127746582 L 27.83896446228027 24.19567108154297 L 37.11515426635742 14.91948127746582 L 40.75844573974609 18.56277656555176 L 31.48225784301758 27.83896446228027 L 40.75844573974609 37.11515426635742 Z">
 			</path>
 		</svg></Link>
@@ -210,6 +229,7 @@ export default function signup() {
 				<path id="Path_12" d="M 583.1146240234375 275.2232360839844 C 584.3248291015625 275.2470397949219 585.25146484375 276.2245178222656 585.219970703125 277.4439697265625 C 585.1892700195312 278.6322631835938 584.2156372070312 279.5577697753906 583.01708984375 279.5382385253906 C 581.8262329101562 279.5188293457031 580.87890625 278.5195922851562 580.9057006835938 277.3110046386719 C 580.9318237304688 276.1312561035156 581.91748046875 275.1996765136719 583.1146240234375 275.2232360839844 Z">
 				</path>
 			</svg>
+		</div>
 		</div>
 	</>
 

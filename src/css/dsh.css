@@ -8,11 +8,19 @@
 :root {
 	--web-view-ids: Web_1920__3;
 }
+
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	border: none;
+	
+}
+/* zoooooooooooooooooom level */
+body {
+    transform: perspective(20vw) translateZ(calc(20vw - 340px));
+    transform-origin: left center;
 }
 #Web_1920__3 {
 	position: absolute;

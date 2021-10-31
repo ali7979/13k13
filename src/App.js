@@ -9,8 +9,8 @@ import Dashboard from './screens/Dashboard';
 import dshbrd from './screens/dshbrd';
 import hmepg from './screens/hmepg';
 import Signup from './Components/Signup';
-import sigup from './screens/signup';
-import upldsc from './screens/upldsc';
+import sigup from './screens/Signup';
+import Upldsc from './screens/Upldsc';
 import signin from './screens/signin';
 import profile from './screens/profile';
 import VidsComponent from './Components/VidsComponent';
@@ -28,11 +28,12 @@ function App() {
         <Route path="/post" exact component={hmepg} />
         <Route path="/login" exact component={Login} />
         <Route path="/hme" exact component={hmepg} />
-        <Route path="/" exact component={upldsc}/>
+        <Route path="/" exact component={dshbrd}/>
+        <Route path="/upload" exact component={Upldsc}/>
         {/* <Route path="/u" exact component={UploadVideoScreen}/> */}
         <Route path="/dash" exact component={Dashboard}/>
         <Route path="/dsh" exact component={dshbrd}/>
-        <Route path="/signup" exact component={sigup}/>
+        <Route path="/signup" exact component={Signup}/>
         <Route path="/signin" exact component={signin}/>
         <Route path="/profile" exact component={profile}/>
         <Route path="/vid" exact component={VidsComponent}/>

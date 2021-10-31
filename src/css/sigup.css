@@ -12,7 +12,16 @@
 	padding: 0;
 	box-sizing: border-box;
 	border: none;
+	
 }
+
+
+.sign{
+z-index: 1;
+position: absolute;
+
+}
+
 #Web_1920__9 {
 	position: absolute;
 	width: 1920px;
@@ -23,6 +32,7 @@
 	--web-view-id: Web_1920__9;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
+	z-index: 1;
 }
 #Rectangle_1 {
 	fill: rgba(42,42,42,1);
@@ -34,6 +44,7 @@
 	height: 1080px;
 	left: 0px;
 	top: 0px;
+	
 }
 #Full_transparent {
 	position: absolute;

@@ -1,17 +1,35 @@
+import React, { useEffect, useState } from 'react'
+
 import '../css/upld.css'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Full_transparent from "../images/Full_transparent.png"
 import Ellipse_4 from "../images/Ellipse_4.png"
+import signin from './signin'
+import Signup from './Signup'
 
-export default function upldsc() {
 
+export default function Upldsc() {
+const [disp, setdisp] = useState("block")
+var fun=()=>{
+// 	var x = document.getElementById("myDIV");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+alert("zz")
+setdisp("block")
+
+}
 
 
 
 
     return (
         <>
+		
 <div id="Web_1920__5">
+	
 	<svg class="Rectangle_40">
 		<rect id="Rectangle_40" rx="0" ry="0" x="0" y="0" width="1920" height="1080">
 		</rect>
@@ -34,7 +52,16 @@ export default function upldsc() {
 	<div id="Allow_users_to">
 		<span>Allow users to</span>
 	</div>
-	<img id="Full_transparent" src={Full_transparent}/>
+	<NavLink to="/"><img id="Full_transparent" src={Full_transparent}/></NavLink>
+
+
+	
+
+
+
+
+
+	<Signup />
 		
 	<svg class="Line_12" viewBox="0 0 1920 2">
 		<path id="Line_12" d="M 0 0 L 1920 0">
@@ -152,7 +179,14 @@ export default function upldsc() {
 			</rect>
 		</svg>
 	</div>
-	<img id="Ellipse_4" src={Ellipse_4}  />
+<NavLink to="/profile"><img id="Ellipse_4" src={Ellipse_4} /></NavLink>N
+	
+
+
+	<div class="w3-container">
+        <p>You have two options to close this modal:</p>
+        <p>Click on the "x" or click anywhere outside of the modal!</p>
+      </div>
 		
 	<div id="Group_79">
 		
